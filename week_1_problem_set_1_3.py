@@ -13,7 +13,7 @@ for i in range(len(myWords)):
             if tempLtr <= letter:
                 tempStr += letter
             else:
-                if myStr == "" or len(tempStr) > len(myStr):
+                if myStr == "" or (myStr != "" and len(tempStr) > len(myStr)):
                     myStr = tempStr
                     tempStr = letter
 
